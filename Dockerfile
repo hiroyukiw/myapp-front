@@ -18,6 +18,15 @@ RUN echo ${API_URL}
 
 WORKDIR ${HOME}
 
+# 追加
+COPY package*.json ./
+RUN yarn install
+
+COPY . ./
+
+RUN yarn run build
+# ここまで
+
 EXPOSE ${CONTAINER_PORT}
 
 # 2021.12.13追記
