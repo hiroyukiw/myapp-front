@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Nuxt.js テレメトリーファイル
+# Doc: https://nuxtjs.org/api/configuration-telemetry/
+/.nuxtrc
